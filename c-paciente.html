@@ -77,14 +77,14 @@
                         <div class="form-row">
                             <div class="col-md-6 mb-3">
                                 <label for="validationDefault01">Nome completo*:</label>
-                                <input type="text" class="form-control" id="validationDefault01" placeholder="" value="" required>
+                                <input type="text" class="form-control" id="validationDefault01" placeholder="Ex.: Marcio Jose" value="" required>
                             </div>
-                            <div class="col-md-4 mb-3">
+                            <div class="col-md-3 mb-3">
                                 <label for="validationDefault02">Email*:</label>
-                                <input type="text" class="form-control" id="validationDefault02" placeholder="" value="" required>
+                                <input type="text" class="form-control" id="validationDefault02" placeholder="Ex.: email@email.com" value="" required>
                             </div>
                             <div class="form-row">
-                                <div class="col-md-4 mb-3">
+                                <div class="col-md-3 mb-3">
                                     <label for="validationDefault03">CPF*:</label>
                                     <input type="text" class="form-control" id="validationDefault03" placeholder="xxx.xxx.xxx-xx" required>
                                 </div>
@@ -94,7 +94,7 @@
                                 </div>
                                 <div class="col-md-3 mb-3">
                                     <label for="validationDefault05">Telefone Celular*:</label>
-                                    <input type="text" class="form-control" id="validationDefault05" placeholder="xxxxx-xxxx" required>
+                                    <input type="text" class="form-control" id="validationDefault05" placeholder="xx xxxxx-xxxx" required>
                                 </div>
                             </div>
                             <hr class="my-4">
@@ -104,36 +104,56 @@
                             <div class="form-row">
                               
                                 <div class="col-md-2 mb-3">
-                                    <label for="validationServer03">CEP*:</label>
-                                    <input type="text" class="form-control is-invalid" id="validationServer03" placeholder="" required>
+                                    
+                                    <div class="form-group">
+                                       <div class="">
+                                          <label for="validationTextarea">Estado: *</label>
+                                          <select class="custom-select" required>
+                                            <option class="text-center"></option>
+                                            <option>Acre(AC)</option>
+                                            <option>Alagoas (AL)</option>
+                                            <option>Amapá (AP)</option>
+                                            <option>Amazonas (AM)</option>
+                                            <option>Bahia (BA)</option>
+                                            <option>Ceará (CE)</option>
+                                            <option>Distrito Federal (DF)</option>
+                                            <option>Espírito Santo (ES)</option>
+                                            <option>Goiás (GO)</option>
+                                            <option>Maranhão (MA)</option>
+                                            <option>Mato Grosso (MT)</option>
+                                            <option>Mato Grosso do Sul (MS)</option>
+                                            <option>Minas Gerais (MG)</option>
+                                            <option>Pará (PA)</option>
+                                            <option>Paraíba (PB)</option>
+                                            <option>Paraná (PR)</option>
+                                            <option>Pernambuco (PE)</option>
+                                            <option>Piauí (PI)</option>
+                                            <option>Rio de Janeiro (RJ)</option>
+                                            <option>Rio Grande do Norte (RN)</option>
+                                            <option>Rio Grande do Sul (RS)</option>
+                                            <option>Rondônia (RO)</option>
+                                            <option>Roraima (RR)</option>
+                                            <option>Santa Catarina (SC)</option>
+                                            <option>São Paulo (SP)</option>
+                                            <option>Sergipe (SE)</option>
+                                            <option>Tocantins (TO)</option>
+
+                                          </select>
+                                        </div>
 
                                 </div>
-                                <div class="col-md-3 mb-3">
-                                    <label for="validationServer04">Rua*:</label>
-                                    <input type="text" class="form-control is-invalid" id="validationServer04" placeholder="" required>
-
-                                </div>
-                                <div class="col-md-2 mb-3">
-                                    <label for="validationServer05">N*:</label>
-                                    <input type="text" class="form-control is-invalid" id="validationServer05" placeholder="" required>
-
-                                </div>
-                                <div class="col-md-3 mb-3">
-                                    <label for="validationServer05">Bairro*:</label>
-                                    <input type="text" class="form-control is-invalid" id="validationServer05" placeholder="" required>
-
-                                </div>
-                                <div class="col-md-3 mb-3">
-                                    <label for="validationServer05">Cidade*:</label>
-                                    <input type="text" class="form-control is-invalid" id="validationServer05" placeholder="" required>
-
-                                </div>
-                                <div class="col-md-3 mb-3">
-                                    <label for="validationServer05">Estado*:</label>
-                                    <input type="text" class="form-control is-invalid" id="validationServer05" placeholder="" required>
-                                </div>
+                                
+                                
 
                             </div>
+                             <div class="col-md-2 mb-3">
+                                    <label for="validationDefault05">Senha*:</label>
+                                    <input type="text" class="form-control" id="validationDefault05" placeholder="Informe sua senha" required>
+                                </div>
+                                 <div class="col-md-2 mb-3">
+                                    <label for="validationDefault05">Repetir Senha*:</label>
+                                    <input type="text" class="form-control" id="validationDefault05" placeholder="Repita ela por favor" required>
+                                </div>
                             <div class="form-check col-md-12 m-4">
                               <input type="checkbox" class="form-check-input" id="exampleCheck1">
                               <label class="form-check-label text-white" for="exampleCheck1">* Eu aceito os termos e condições, e a política de privacidade da kemedico.</label>
