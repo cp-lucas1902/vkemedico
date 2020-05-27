@@ -77,38 +77,38 @@
                         <div class="form-row">
                             <div class="col-md-6 mb-3">
                                 <label for="validationDefault01">Nome completo*:</label>
-                                <input type="text" class="form-control" id="validationDefault01" placeholder="Ex.: Marcio Jose" value="" required>
+                                <input id="Nome" name="Nome" placeholder="Ex.:Marcio Jose" class="form-control input-md" required="" type="text" required>
                             </div>
                             <div class="col-md-3 mb-3">
                                 <label for="validationDefault02">Email*:</label>
-                                <input type="text" class="form-control" id="validationDefault02" placeholder="Ex.: email@email.com" value="" required>
+                                <input id="prependedtext" name="prependedtext" class="form-control" placeholder="email@email.com" required="" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
                             </div>
                             <div class="form-row">
                                 <div class="col-md-3 mb-3">
                                     <label for="validationDefault03">CPF*:</label>
-                                    <input type="text" class="form-control" id="validationDefault03" placeholder="xxx.xxx.xxx-xx" required>
+                                    <input id="cpf" name="cpf" placeholder="Apenas números" class="form-control input-md" required="" type="text" maxlength="11" pattern="[0-9]+$" required>
                                 </div>
                                 <div class="col-md-4 mb-3">
                                     <label for="validationDefault04">Data de Nascimento*:</label>
-                                    <input type="text" class="form-control" id="validationDefault04" placeholder="xx/xx/xxxx" required>
+                                    <input id="dtnasc" name="dtnasc" placeholder="DD/MM/AAAA" class="form-control input-md" required="" type="text" maxlength="10" OnKeyPress="formatar('##/##/####', this)" onBlur="showhide()" required>
                                 </div>
-                                <div class="col-md-3 mb-3">
+                                <div class="col-md-4 mb-3">
                                     <label for="validationDefault05">Telefone Celular*:</label>
-                                    <input type="text" class="form-control" id="validationDefault05" placeholder="xx xxxxx-xxxx" required>
+                                    <input id="prependedtext" name="prependedtext" class="form-control" placeholder="XX XXXXX-XXXX" type="text" maxlength="13" pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$" OnKeyPress="formatar('## #####-####', this)" required>
                                 </div>
                             </div>
                             <hr class="my-4">
 
-                            
+
 
                             <div class="form-row">
-                              
+
                                 <div class="col-md-2 mb-3">
-                                    
+
                                     <div class="form-group">
-                                       <div class="">
-                                          <label for="validationTextarea">Estado: *</label>
-                                          <select class="custom-select" required>
+                                        <div class="">
+                                            <label for="validationTextarea">Estado: *</label>
+                                            <select class="custom-select" required>
                                             <option class="text-center"></option>
                                             <option>Acre(AC)</option>
                                             <option>Alagoas (AL)</option>
@@ -141,35 +141,35 @@
                                           </select>
                                         </div>
 
-                                </div>
-                                
-                                
+                                    </div>
 
-                            </div>
-                             <div class="col-md-2 mb-3">
+
+
+                                </div>
+                                <div class="col-md-2 mb-3">
                                     <label for="validationDefault05">Senha*:</label>
                                     <input type="text" class="form-control" id="validationDefault05" placeholder="Informe sua senha" required>
                                 </div>
-                                 <div class="col-md-2 mb-3">
+                                <div class="col-md-2 mb-3">
                                     <label for="validationDefault05">Repetir Senha*:</label>
                                     <input type="text" class="form-control" id="validationDefault05" placeholder="Repita ela por favor" required>
                                 </div>
-                            <div class="form-check col-md-12 m-4">
-                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                              <label class="form-check-label text-white" for="exampleCheck1">* Eu aceito os termos e condições, e a política de privacidade da kemedico.</label>
+                                <div class="form-check col-md-12 m-4">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label text-white" for="exampleCheck1">* Eu aceito os termos e condições, e a política de privacidade da kemedico.</label>
+                                </div>
+                                <button type="submit" class="btn btn-outline-light">Cadastrar</button>
+
+
+
+
                             </div>
-                            <button type="submit" class="btn btn-outline-light">Cadastrar</button>
-
-
-
-
-                        </div>
 
                     </form>
 
+                    </div>
                 </div>
             </div>
-        </div>
 
     </section>
 
