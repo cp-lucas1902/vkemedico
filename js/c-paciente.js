@@ -121,6 +121,22 @@ function habilita(i)
         document.getElementById(i).disabled = false;
     }
 
+/*Habilita e Desabilita Forms*/
+
+$(document).ready(function() {
+    $("#enable").click(function (){
+                // habilita o campo 
+        $("input").prop("disabled", false);
+        
+    });
+    
+    $("#disable").click(function (){
+                // desabilita o campo 
+        $("input").prop("disabled", true);
+        
+    });
+});
+
 
 function showhide()
  {
