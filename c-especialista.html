@@ -82,34 +82,38 @@
           </div>
 
 
-          <h2>Crie sua conta Gratuita</h2>
+          <h2>Cadastro Especialista</h2>
 
           <!-- --------------------------------------- -->
           <form class="was-validated form-row">
             <div class="col-lg-6 mb-4">
               <label for="validationTextarea">Nome Completo: *</label>
-              <input type="text" class="form-control is-invalid" id="validationTextarea" required>
+              <input type="text" class="form-control is-invalid" id="validationTextarea" placeholder="Ex.:Jose Marto" required>
             </div>
 
             <div class="col-lg-4 mb-4">
               <label for="validationTextarea">Email: *</label>
-              <input type="text" class="form-control is-invalid" id="validationTextarea" required>
+              <input type="text" class="form-control is-invalid" id="validationTextarea" placeholder="Ex.:email@email.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
             </div>
-
+             <div class="col-md-2 mb-4">
+              <label for="CRM">Data de Nacimento: *</label>
+              <input id="crm" class="form-control is-invalid input-md" required="" maxlength="8" placeholder="Ex: 00/00/0000" pattern="[0-9]+$">
+            </div >
           </form>
+
 
           <form class="was-validated form-row">
             <div class="col-lg-3 mb-4">
               <label for="validationTextarea">Celular *</label>
-              <input type="text" class="form-control is-invalid" placeholder="Ex: +55 (11) 99977-0000"
-                id="validationTextarea" required>
+              <input type="text" class="form-control is-invalid" placeholder="(DDD) 91111-0000"
+                id="validationTextarea" required pattern="[0-9]+$" maxlength="12">
             </div>
 
             <div class="col-lg-3 mb-4">
               <label for="validationTextarea">Estado: *</label>
               <select class="custom-select" required>
                 <option class="text-center"></option>
-                <option>Acre(AC)</option>
+                <option>Acre (AC)</option>
                 <option>Alagoas (AL)</option>
                 <option>Amapá (AP)</option>
                 <option>Amazonas (AM)</option>
@@ -143,21 +147,63 @@
           </form>
 
           <form class="was-validated form-row">
-            <div class="col-lg-3 mb-4">
-              <label for="CEP">CEP: *</label>
-              <input id="cep" name="cep" placeholder="Apenas números" class="form-control is-invalid input-md"
-                required="" value="" type="search" maxlength="8" pattern="[0-9]+$">
+            
+                              
+              <div class="col-lg-2 mb-3">
+                  <label for="validationServer03">CEP* :</label>
+                  <input type="text" class="form-control is-invalid" id="validationServer03" placeholder="Ex.:00000-000" maxlength="8" required  pattern="[0-9]+$">
+
+              </div>
+              <div class="col-lg-3 mb-3">
+                  <label for="validationServer04">Rua* :</label>
+                  <input type="text" class="form-control is-invalid" id="validationServer04"  placeholder="Ex.:Cardoso dos Santos" required>
+
+              </div>
+              <div class="col-lg-2 mb-3">
+                  <label for="validationServer05">N* :</label>
+                  <input type="text" class="form-control is-invalid" id="validationServer05"  placeholder="Ex.:Apt 80" required>
+
+              </div>
+              <div class="col-lg-4 mb-3">
+                <label for="validationServer05">Complemento* : </label>
+                <input type="text" class="form-control is-invalid" id="validationServer05"  placeholder="Ex.:Conjunto E" required>
+
             </div>
+              <div class="col-lg-3 mb-3">
+                  <label for="validationServer05">Bairro* :</label>
+                  <input type="text" class="form-control is-invalid" id="validationServer05"  placeholder="Ex.:Sobradinho" required>
+
+              </div>
+              <div class="col-lg-3 mb-3">
+                  <label for="validationServer05">Cidade* :</label>
+                  <input type="text" class="form-control is-invalid" id="validationServer05"  placeholder="Ex.:São paulo" required>
+
+              </div>
+              
+
+          
 
           </form>
 
           <form class="was-validated form-row">
             <div class="col-lg-2 mb-4">
               <label for="CRM">CRM: *</label>
-              <input id="crm" class="form-control is-invalid input-md" required="" value="" maxlength="6">
+              <input id="crm" class="form-control is-invalid" required="" value="" placeholder="Ex.:321321" maxlength="6" pattern="[0-9]+$">
             </div>
+            <div class="col-lg-2 mb-4">
+              <label for="CRM">CPF: *</label>
+              <input id="crm" class="form-control is-invalid" required="" value=""  placeholder="Ex.:052.627.103-09" maxlength="11"pattern="[0-9]+$">
+            </div>
+            <hr class="col-md-12 ">
+             <div class="custom-file col-md-3 ">
+              <input type="file" class="custom-file-input" id="customFileLang" lang="es" name="form-contrc" id="validationDefault05" required >
+              <label for="exampleFileLang " for="validationDefault05" class="custom-file-label" >------ Foto de Perfil ------</label>
+                                   
+              </div>
 
           </form>
+
+          
 
 
 
@@ -178,12 +224,10 @@
               </label>
             </div>
 
-            <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck3">
-              <label class="form-check-label" for="exampleCheck3">* Eu aceito <a href="temos.html"
-                  class="text-warning">os termos e condições</a>, e a <a href="privacidade"
-                  class="text-warning">política de privacidade</a> da kemedico.</label>
-            </div>
+            <div class="form-check col-md-12 ">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label text-white" for="exampleCheck1">* Eu aceito os termos e condições, e a política de privacidade da kemedico.</label>
+                                </div>
             <!--<div class="form-check">
                   <input type="checkbox" class="form-check-input" id="exampleCheck1">
                   <label class="form-check-label" for="exampleCheck1">* Eu aceito <a href="temos.html" class="text-warning">os termos e condições</a>, e a <a href="privacidade" class="text-warning">política de privacidade</a> da Doctoralia.</label>

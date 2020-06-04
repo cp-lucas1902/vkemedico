@@ -85,7 +85,7 @@
             <form class="was-validated form-row">
 
               <div class="col-lg-4 mb-3">
-                <label for="validationTextarea">Especialização: *</label>
+                <label for="validationTextarea"  id="ck">Especialização Principal: *</label>
                 <select class="custom-select" required>
                   <option class="text-center"></option>
 
@@ -112,14 +112,11 @@
 
                 </select>
               </div>
-
-
-
-              <div class="col-lg-4 mb-3">
-                <label for="validationTextarea">Especialização Adicional: *</label>
+               <div class="col-lg-4 mb-3">
+                <label for="validationTextarea" id="ck">Especialização adicional: *</label>
                 <select class="custom-select" required>
                   <option class="text-center"></option>
-                  <option>Nenhuma</option>
+                  <option value="0">Outro</option>
                   <option>Anestesiologista</option>
                   <option>Clínica médica</option>
                   <option>Dermatologista</option>
@@ -143,138 +140,196 @@
 
                 </select>
               </div>
-              <br>
+
             </form>
 
 
           </div>
-          <label for="validationTextarea">Conveniado: *</label>
+          <hr class="col-md-4">
+          <label for="validationTextarea" id="ck">Conveniado aceitos por você ou sua clínica: *</label>
           <div class="mb-3">
 
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-              <label class="form-check-label" for="inlineCheckbox1">XXXXXXXXXX</label>
+              <label class="form-check-label" for="inlineCheckbox1">Amil</label>
             </div>
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-              <label class="form-check-label" for="inlineCheckbox2">XXXXXXXXXX</label>
+              <label class="form-check-label" for="inlineCheckbox2">Unimed</label>
             </div>
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-              <label class="form-check-label" for="inlineCheckbox2">XXXXXXXXXX</label>
+              <label class="form-check-label" for="inlineCheckbox2">Hapvida</label>
             </div>
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
-              <label class="form-check-label" for="inlineCheckbox2">XXXXXXXXXX</label>
+              <label class="form-check-label" for="inlineCheckbox2">Intermédica</label>
             </div>
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
-              <label class="form-check-label" for="inlineCheckbox2">XXXXXXXXXX</label>
+              <label class="form-check-label" for="inlineCheckbox2">Golden Cross</label>
             </div>
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option6">
-              <label class="form-check-label" for="inlineCheckbox2">XXXXXXXXXX</label>
+              <label class="form-check-label" for="inlineCheckbox2">Mediservice</label>
             </div>
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="option7">
-              <label class="form-check-label" for="inlineCheckbox2">XXXXXXXXXX</label>
+              <label class="form-check-label" for="inlineCheckbox2">Promédica</label>
             </div>
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="option8">
-              <label class="form-check-label" for="inlineCheckbox2">XXXXXXXXXX</label>
+              <label class="form-check-label" for="inlineCheckbox2">Vitallis</label>
             </div>
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="checkbox" id="inlineCheckbox9" value="option9">
-              <label class="form-check-label" for="inlineCheckbox2">XXXXXXXXXX</label>
+              <label class="form-check-label" for="inlineCheckbox2">Care Plus</label>
             </div>
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="checkbox" id="inlineCheckbox10" value="option10">
-              <label class="form-check-label" for="inlineCheckbox2">XXXXXXXXXX</label>
+              <label class="form-check-label" for="inlineCheckbox2">Bradesco Saúde</label>
             </div>
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option11">
-              <label class="form-check-label" for="inlineCheckbox2">XXXXXXXXXX</label>
+              <label class="form-check-label" for="inlineCheckbox2">Porto Seguro</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option11">
+              <label class="form-check-label" for="inlineCheckbox2">SulAmérica Saúde</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option11">
+              <label class="form-check-label" for="inlineCheckbox2">Allianz Saúde</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option11">
+              <label class="form-check-label" for="inlineCheckbox2">Prevent Senior</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option11">
+              <label class="form-check-label" for="inlineCheckbox2">Hapvida</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option11">
+              <label class="form-check-label" for="inlineCheckbox2">Sompo Saúde</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option11">
+              <label class="form-check-label" for="inlineCheckbox2">Omint</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option11">
+              <label class="form-check-label" for="inlineCheckbox2">Outro</label>
+            </div>
+            <hr class="col-md-6">
+            <div class="col-md-12">
+              <form>
+                <div class="form-row">
+                  <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="Nome do seu Consultorio">
+                  </div>
+                  <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="Endereço do seu Consultorio">
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
+          <hr class="col-md-4">
+          <label for="validationTextarea" id="ck">Formas de pagamento para o pacientes: *</label>
+          <div class="mb-3">
 
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Dinheiro</label>
+            </div>
+            
+            
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option11">
+              <label class="form-check-label" for="inlineCheckbox2">Cartão de Crédito</label>
+            </div>
+             <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option11">
+              <label class="form-check-label" for="inlineCheckbox2">Cartão de Débito</label>
+            </div>
+             <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option11">
+              <label class="form-check-label" for="inlineCheckbox2">TED</label>
+            </div>
+             <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option11">
+              <label class="form-check-label" for="inlineCheckbox2">Boleto</label>
+            </div>
+             <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option11">
+              <label class="form-check-label" for="inlineCheckbox2">Cheque</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option11">
+              <label class="form-check-label" for="inlineCheckbox2">Deposito Bancario</label>
+            </div>
+          </div>
+          <hr class="col-md-4">
+          <label for="validationTextarea" id="ck">Formas de pagamento para a Kémédico: *</label>
+          <div class="mb-3">
+
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">PayPal</label>
+            </div>
+            
+            
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option11">
+              <label class="form-check-label" for="inlineCheckbox2">Cartão de Crédito</label>
+            </div>
+             <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option11">
+              <label class="form-check-label" for="inlineCheckbox2">Cartão de Débito</label>
+            </div>
+             <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option11">
+              <label class="form-check-label" for="inlineCheckbox2">TED</label>
+            </div>
+             <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option11">
+              <label class="form-check-label" for="inlineCheckbox2">Boleto</label>
+            </div>
+             <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option11">
+              <label class="form-check-label" for="inlineCheckbox2">Cheque</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option11">
+              <label class="form-check-label" for="inlineCheckbox2">Deposito Bancario</label>
+            </div>
+          </div>
+          
+          <hr class="col-md-4">
           <div>
             <form class="was-validated form-row">
-              <div class="col-lg-2 mb-3">
-                <label for="validationTextarea">Ano de Formação: *</label>
+
+              <div class="col-md-2 m-1">
+                <label for="validationTextarea" id="ck" style="font-size: 1.1em">Valor da Consulta :*</label>
                 <input type="text" class="form-control is-invalid" id="validationTextarea" maxlength="4"
-                  pattern="[0-9]+$" required>
-              </div>
-
-              <div class="col-lg-4 mb-3">
-                <label for="validationTextarea">Instituição de Formação: *</label>
-                <input type="text" class="form-control is-invalid" id="validationTextarea" required>
+                  pattern="[0-9]+$" placeholder="Ex.:R$ 150,00" required>
               </div>
             </form>
+
           </div>
 
-          <div>
-            <label for="Form">Formação: *</label>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
-                checked>
-              <label class="form-check-label" for="exampleRadios1">
-                Medicina
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-              <label class="form-check-label" for="exampleRadios2">
-                Outra
-              </label>
-            </div>
-            <form>
-              <div class="col-lg-4 mb-3">
-                <input class="form-control" type="text">
-              </div>
-            </form>
-          </div>
+          
 
 
-          <div class="mb-4">
-            <label for="Form">Titularidade: *</label>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-              <label class="form-check-label" for="exampleRadios2">
-                Residência Médica
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-              <label class="form-check-label" for="exampleRadios2">
-                Mestrado
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-              <label class="form-check-label" for="exampleRadios2">
-                Doutorado
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-              <label class="form-check-label" for="exampleRadios2">
-                Pós-Doutorado
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-              <label class="form-check-label" for="exampleRadios2">
-                Não tem
-              </label>
-            </div>
-          </div>
+          
         </div>
         <!--<div class="form-check">
                   <input type="checkbox" class="form-check-input" id="exampleCheck1">
                   <label class="form-check-label" for="exampleCheck1">* Eu aceito <a href="temos.html" class="text-warning">os termos e condições</a>, e a <a href="privacidade" class="text-warning">política de privacidade</a> da Doctoralia.</label>
                 </div>-->
-        <div class="col-lg">
-          <a href="c-especialista-2.html" class="btn btn-outline-light ">Cadastrar</a>
+        <div class="col-md-2 m-2">
+          <a href="c-especialista-2.html" class="btn btn-outline-light ">Finalizar Cadastrar</a>
         </div>
 
 

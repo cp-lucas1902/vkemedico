@@ -40,72 +40,27 @@
           <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
             <i class="fas fa-bars text-white"></i>
           </button>
-          <form class="form-inline">
-            <div class="form-row">
-                    <div class="form-group text-white m-3 ">
-                        <label for="validationTextarea" >Qual especialista você procura ?&nbsp;&nbsp;</label>
-                        <select class="custom-select" id="exampleFormControlSelect1" required="">
-                  <option> </option>
-                  <option>Anestesiologista</option>
-                  <option>Clínica médica</option>
-                  <option>Dermatologista</option>
-                  <option>Cardiologista</option>
-                  <option>Pscicólogo</option>
-                  <option>Ginecologista</option>
-                  <option>Homeopatia</option>
-                  <option>Pediatra</option>
-                  <option>Endocrinologista</option>
-                  <option>Infectologista</option>
-                  <option>Dentista</option>
-                  <option>Neurocirurgista</option>  
-                  <option>Oncologista</option>
-                  <option>Nutrologista</option>
-                  <option>Geriatra</option>
-                  <option>Neurologista</option>
-                  <option>Oftalmologista</option>
-                  <option>Ortopedista</option>
-                  <option>Otorrinolaringologista</option>
-                  <option>Fisioterapeuta</option>
-                </select>
-                    </div>
-                    <div class="form-group m-3  text-white">
-                        <label for="validationTextarea">Cidade-UF: *&nbsp;&nbsp;</label>
-                        <select class="custom-select" required>
-                                            <option class="text-center"></option>
-                                            <option>Acre(AC)</option>
-                                            <option>Alagoas (AL)</option>
-                                            <option>Amapá (AP)</option>
-                                            <option>Amazonas (AM)</option>
-                                            <option>Bahia (BA)</option>
-                                            <option>Ceará (CE)</option>
-                                            <option>Distrito Federal (DF)</option>
-                                            <option>Espírito Santo (ES)</option>
-                                            <option>Goiás (GO)</option>
-                                            <option>Maranhão (MA)</option>
-                                            <option>Mato Grosso (MT)</option>
-                                            <option>Mato Grosso do Sul (MS)</option>
-                                            <option>Minas Gerais (MG)</option>
-                                            <option>Pará (PA)</option>
-                                            <option>Paraíba (PB)</option>
-                                            <option>Paraná (PR)</option>
-                                            <option>Pernambuco (PE)</option>
-                                            <option>Piauí (PI)</option>
-                                            <option>Rio de Janeiro (RJ)</option>
-                                            <option>Rio Grande do Norte (RN)</option>
-                                            <option>Rio Grande do Sul (RS)</option>
-                                            <option>Rondônia (RO)</option>
-                                            <option>Roraima (RR)</option>
-                                            <option>Santa Catarina (SC)</option>
-                                            <option>São Paulo (SP)</option>
-                                            <option>Sergipe (SE)</option>
-                                            <option>Tocantins (TO)</option>
+          <div class="collapse navbar-collapse" id="nav-principal">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="" class="nav-link"></a>
+                        </li>
 
-                                          </select>
-                    </div>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Pesquisar</a>
+                        </li>
+
+                        <li class="nav-item divisor"></li>
+
+                        <li class="nav-item">
+                            <a href="config-paciente.html" class="nav-link">Minha conta</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="login.html" class="nav-link">Sair</a>
+                        </li>
+                    </ul>
                 </div>
-            
-            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
-          </form>
 
 
 
@@ -127,7 +82,6 @@
   <hr class="col-md-4">
   <!--Filtro-->
   <div class="container form-inline " style="background-color: #007bff">
-    <h3 class="text-white pl-5 pr-5 lead">Filtros</h3>
     <div class="dropdown  m-3">
       <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Métodos de Pagamento
@@ -186,27 +140,7 @@
       <button class="btn btn-primary dropdown-toggle col-md-12" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Bairro
       </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <form class="form-inline m-2">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Local" aria-label="Search">
-                    </form>
 
-                    <select multiple class="form-check " id="">
-      
-
-                        <option><a href="">2</a></option>
-                        <option><a href="">3</a></option>
-                        <option><a href="">4</a></option>
-                        <option><a href="">2</a></option>
-                       
-                        
-                     
-                    </select>
-                    <div class="text-center">
-                        <hr>
-                        <button type="button" class="btn btn-primary col-sm-6  ">Aplicar</button>
-                    </div>
-                </div>
 
             </div>
       <div class="dropdown m-3">
@@ -291,15 +225,29 @@
                         <hr>
                         <button type="button" class="btn btn-primary col-sm-6  ">Aplicar</button>
                     </div>
-
+                    <!--<div class="dropdown">
+                      <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                      <div id="myDropdown" class="dropdown-content">
+                        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                        <a href="#about">About</a>
+                        <a href="#base">Base</a>
+                        <a href="#blog">Blog</a>
+                        <a href="#contact">Contact</a>
+                        <a href="#custom">Custom</a>
+                        <a href="#support">Support</a>
+                        <a href="#tools">Tools</a>
+                      </div>
+                    </div>-->        
+      
                 </div>
             </div>
-  </div>
+</div>
   <!--Inicio Painel-->
   <div class="container">
     <div class="row heading heading-icon">
       
         <h3 class="text-white p-5">Especialista, Cidade</h3>
+
     </div>
     <ul class="row">
       <li class="col-12 col-md-6 col-lg-3">

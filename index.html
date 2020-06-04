@@ -77,7 +77,7 @@
                 </div>
             </div>
             <div class="col-md-2"></div>
-            <form>
+            <form class="">
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="exampleFormControlSelect1">Qual especialista você procura ?</label>
@@ -140,14 +140,23 @@
 
                                           </select>
                     </div>
+
                 </div>
 
-
+                
                 <div class="form-row col-md-12  text-center">
                     <fieldset class="form-group">
-                        <div class="row ">
+                        <div class="row  ">
                             <legend class="col-form-label col-sm-5 text-center ">Possue algum convenio de saúde?</legend>
+                            <div class="form-check  col-md-4  float-right ">
+                                   
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label pr-5 text-center  " for="exampleCheck1">Médicos</label>
+                                    
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                    <label class="form-check-label p-1 " for="exampleCheck2">Clínicas</label>
 
+                                </div>  
                             <div class="col-sm-5 text-center">
                                 <div class="input-group">
                                     <span class="input-group-addon">     
@@ -168,12 +177,14 @@
                                 <option value="3">Three</option>
                               </select>
                                 </div>
-
+                            
+                            
                     </fieldset>
 
 
 
                     </div>
+                    
 
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                       Pesquisar
