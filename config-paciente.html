@@ -71,11 +71,32 @@
                     <br>
                     <br>
                     <hr class="col-md-4">
-                    <h2 class="text-center">Configurações</h2>
+                    <h2 class="text-center">Minha Conta</h2>
                     <hr class="col-md-4">
                    <button href="#" id="enable" class="btn btn-success pr-2">Habilita Campos</button>
 
                         <button href="#" id="disable" class="btn btn-warning">Desabilita Campos</button>
+                        <button href="#" id="" class="btn btn-danger" data-target="#exampleModal" data-toggle="modal">Excluir Conta</button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header ">
+                                <h5 class="modal-title  text-dark " id="exampleModalLabel">Aviso!</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body text-center" style="color: black">
+                               Tem certeza que deseja excluir sua conta? 
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                <button type="button" class="btn btn-danger" ><a href="" class="text-white">Excluir</a></button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
                         <hr class="col-md-4">
                     <form class="was-validated border-2 border-light rounded"  >
                         <div class="form-row">
@@ -162,7 +183,7 @@
                                     <label for="validationDefault05">Repetir Senha*:</label>
                                     <input type="text" class="form-control" id="validationDefault05" placeholder="Repita ela por favor" required id="campo" name="campo10" disabled="">
                                 </div>
-                                <div class="form-check col-md-12 m-4">
+                                                                <div class="form-check col-md-12 m-4">
                                     <input type="checkbox" class="form-check-input" id="exampleCheck1" id="campo" name="campo11" disabled="">
                                     <label class="form-check-label text-white" for="exampleCheck1">* Eu aceito os termos e condições, e a política de privacidade da kemedico.</label>
                                 </div>
